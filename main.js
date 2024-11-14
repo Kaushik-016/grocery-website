@@ -1,6 +1,2 @@
-function placeOrder(event) {
-    event.preventDefault();
-    alert('Order placed successfully!');
-    window.location.href = 'index.html';
-  }
-  
+// main.js - Placeholder for interactive JavaScript functions
+console.log("JavaScript is linked and ready for future enhancements.");
