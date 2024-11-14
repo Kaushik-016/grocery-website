@@ -1,36 +1,98 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  background-color: #008080;
+  padding: 1em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('https://via.placeholder.com/1200x400'); /* Use your own image URL */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.hero button {
+  padding: 0.8em 1.5em;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #ff8c00;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* General button styling */
+button {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
   }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+
+  .hero h2 {
+    font-size: 2em;
   }
-  
-  nav a {
-    color: #fff;
-    margin: 0 1em;
-    text-decoration: none;
-  }
-  
-  .main {
-    padding: 1em;
-  }
-  
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .product-item {
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin: 1em;
-    width: 200px;
-    text-align: center;
-  }
-  
+}
